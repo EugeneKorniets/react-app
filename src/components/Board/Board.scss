@@ -1,0 +1,30 @@
+.board {
+  width: 200px;
+  margin: 0 auto;
+
+  &__title {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  &__status {
+    font-size: 0.8em;
+  }
+
+  &__table {
+
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+  }
+
+  &__cell {
+    display: block;
+    width: 33%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid lightgrey;
+  }
+}

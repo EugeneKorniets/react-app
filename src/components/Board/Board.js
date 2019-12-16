@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './Board.css'
+import './Board.scss'
 
 import Square from '../Square/Square'
 
@@ -26,20 +26,40 @@ class Board extends React.Component {
       <div className="board">
         <p className="board__title">Board</p>
         <p className="board__status">{ status }</p>
-        <div className="board__row">
-          {this.renderSquare(0)}
-          {this.renderSquare(1)}
-          {this.renderSquare(2)}
-        </div>
-        <div className="board__row">
-          {this.renderSquare(3)}
-          {this.renderSquare(4)}
-          {this.renderSquare(5)}
-        </div>
-        <div className="board__row">
-          {this.renderSquare(6)}
-          {this.renderSquare(7)}
-          {this.renderSquare(8)}
+        <div className="board__table">
+          <div className="board__row">
+            <div className="board__cell">
+              {this.renderSquare(0)}
+            </div>
+            <div className="board__cell">
+              {this.renderSquare(1)}
+            </div>
+            <div className="board__cell">
+              {this.renderSquare(2)}
+            </div>
+          </div>
+          <div className="board__row">
+            <div className="board__cell">
+              {this.renderSquare(3)}
+            </div>
+            <div className="board__cell">
+              {this.renderSquare(4)}
+            </div>
+            <div className="board__cell">
+              {this.renderSquare(5)}
+            </div>
+          </div>
+          <div className="board__row">
+            <div className="board__cell">
+              {this.renderSquare(6)}
+            </div>
+            <div className="board__cell">
+              {this.renderSquare(7)}
+            </div>
+            <div className="board__cell">
+              {this.renderSquare(8)}
+            </div>
+          </div>
         </div>
       </div>
     )

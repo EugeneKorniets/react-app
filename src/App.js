@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from './assets/logo.svg'
-import './App.css'
+import './App.scss'
 
 import Game from './components/Game/Game'
 
